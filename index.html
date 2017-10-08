@@ -210,19 +210,19 @@
 
 
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-hexo的简单使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/28/hello-world/">Hello World</a>
+      <a class="article-title" href="/2017/06/28/hexo的简单使用/">hexo使用部署说明</a>
     </h1>
   
 
         
-        <a href="/2017/06/28/hello-world/" class="archive-article-date">
+        <a href="/2017/06/28/hexo的简单使用/" class="archive-article-date">
   	<time datetime="2017-06-28T14:16:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-28</time>
 </a>
         
@@ -230,15 +230,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <p>一起来学习使用 <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>!<br>第一篇日志是介绍如何使用Hexo. 想要更多信息，就去查看官方文档啊亲 <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> . 如果你在用Hexo时遇到了任何问题，建议你不要做一个伸手党，去 <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a>这个地址看一下，或者你也可以到 <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>这里去问作者.</p>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo</div></pre></td></tr></table></figure>
+<h3 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init blog</div></pre></td></tr></table></figure>
+<h3 id="进入目录"><a href="#进入目录" class="headerlink" title="进入目录"></a>进入目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> blog</div></pre></td></tr></table></figure>
+<h3 id="新建一个日志"><a href="#新建一个日志" class="headerlink" title="新建一个日志"></a>新建一个日志</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"我的新日志"</span></div></pre></td></tr></table></figure>
+<p>更多信息可以查看: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">新建日志</a></p>
+<h3 id="本地服务"><a href="#本地服务" class="headerlink" title="本地服务"></a>本地服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>更多信息可以查看: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">服务</a></p>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>更多信息可以查看: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">生成</a></p>
+<h3 id="发布到远程站点"><a href="#发布到远程站点" class="headerlink" title="发布到远程站点"></a>发布到远程站点</h3><p>发布到远程站点之前，应当配置一些东西</p>
+<blockquote>
+<p>第一步：</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>更多信息可以查看: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<p>~~~ 么么哒，这就是hexo的简单使用</p>
 
       
 
@@ -251,7 +259,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/06/28/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/06/28/hexo的简单使用/">展开全文 >></a>
         </p>
       
 
