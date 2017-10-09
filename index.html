@@ -54,7 +54,7 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/随笔/">随笔</a></li>
+				<li><a href="/suibi/">随笔</a></li>
 	        
 			</ul>
 		</nav>
@@ -76,13 +76,11 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="http://github.com/greensoon" title="github"><i class="icon-github"></i></a>
 		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+					<a class="qq" target="_blank" href="/1016839652" title="qq"><i class="icon-qq"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+					<a class="mail" target="_blank" href="mailto:1016839652@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
 		</nav>
@@ -117,13 +115,11 @@
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="http://github.com/greensoon" title="github"><i class="icon-github"></i></a>
 			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
+						<a class="qq" target="_blank" href="/1016839652" title="qq"><i class="icon-qq"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
+						<a class="mail" target="_blank" href="mailto:1016839652@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
 			</nav>
@@ -134,7 +130,7 @@
 				
 					<li style="width: 50%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔/">随笔</a></li>
+					<li style="width: 50%"><a href="/suibi/">随笔</a></li>
 		        
 				</ul>
 			</nav>
@@ -171,7 +167,19 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>angular1.5结合webpack 和 es6的语法，使用了class的方式，用出react的感觉</p>
+        <p>angular1.5结合webpack 和 es6的语法，使用了class的方式，用出react的感觉。<br>另外，是异步加载。<br><a href="https://github.com/Greensoon/angular1.5-es6" target="_blank" rel="external">项目地址：</a></p>
+<h2 id="项目说明："><a href="#项目说明：" class="headerlink" title="项目说明："></a>项目说明：</h2><h1 id="架构框架"><a href="#架构框架" class="headerlink" title="架构框架"></a>架构框架</h1><blockquote>
+<p>提示: 确保你正在使用node</p>
+</blockquote>
+<h3 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># clone our repo</span></div><div class="line">$ git <span class="built_in">clone</span> xxx</div><div class="line"></div><div class="line"><span class="comment"># install the dependencies with npm</span></div><div class="line">$ npm install</div><div class="line"></div><div class="line"><span class="comment"># start the server</span></div><div class="line">$ npm start</div><div class="line"></div><div class="line"><span class="comment"># production</span></div><div class="line">$ npm run build</div></pre></td></tr></table></figure>
+<h2 id="启动"><a href="#启动" class="headerlink" title="启动"></a>启动</h2><p>安装完所有依赖之后你可以执行以下脚本来启动程序:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">npm start</div></pre></td></tr></table></figure></p>
+<p>使用本地服务<code>webpack-dev-server</code>监听，创建和热加载。<br>端口暂为3000<code>http://localhost:3000</code></p>
+<h2 id="生产输出刷新404的解决办法"><a href="#生产输出刷新404的解决办法" class="headerlink" title="生产输出刷新404的解决办法"></a>生产输出刷新404的解决办法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line">apache: 生产产出有 .htaccess 文件，不会出现问题</div><div class="line">nginx: 需要在nginx 的配置中进行一下配置：</div><div class="line">        location / &#123;</div><div class="line">            if (!-e $request_filename)&#123;</div><div class="line">                rewrite ^(.*)$ /index.html;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">express: 可以在app上进行路由配置：</div><div class="line">        var express = require(&apos;express&apos;);</div><div class="line">        var app = express();</div><div class="line">        app.all(&apos;/*&apos;, function(req, res, next) &#123;</div><div class="line">            // Just send the index.html for other files to support HTML5Mode</div><div class="line">            res.sendFile(&apos;index.html&apos;, &#123; root: __dirname &#125;);</div><div class="line">        &#125;);</div></pre></td></tr></table></figure>
+<h4 id="关于node版本的问题说明"><a href="#关于node版本的问题说明" class="headerlink" title="关于node版本的问题说明"></a>关于node版本的问题说明</h4><blockquote>
+<p>避免使用太新或太旧的版本</p>
+</blockquote>
+<h2 id="生产版本中如果出现tProvider-undefined，在webpack-prod-js中的UglifyJsPlugin中的mangle加入该provider的名字"><a href="#生产版本中如果出现tProvider-undefined，在webpack-prod-js中的UglifyJsPlugin中的mangle加入该provider的名字" class="headerlink" title="生产版本中如果出现tProvider undefined，在webpack.prod.js中的UglifyJsPlugin中的mangle加入该provider的名字"></a>生产版本中如果出现tProvider undefined，在webpack.prod.js中的UglifyJsPlugin中的mangle加入该provider的名字</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line">mangle: &#123;</div><div class="line">  except: [</div><div class="line">    &apos;$state&apos;,</div><div class="line">    &apos;$stateParams&apos;,</div><div class="line">    &apos;$timeout&apos;,</div><div class="line">    &apos;Core&apos;,</div><div class="line">    &apos;Layer&apos;,</div><div class="line">    &apos;Util&apos;,</div><div class="line">    &apos;$location&apos;,</div><div class="line">    &apos;$rootScope&apos;,</div><div class="line">    &apos;$scope&apos;,</div><div class="line">    &apos;$stateProvider&apos;,</div><div class="line">    &apos;$urlRouterProvider&apos;,</div><div class="line">    &apos;$locationProvider&apos;,</div><div class="line">    &apos;$httpProvider&apos;,</div><div class="line">    &apos;$httpParamSerializer&apos;,</div><div class="line">    &apos;$sce&apos;</div><div class="line">  ]</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>如果有问题可以文章下方留言</p>
 
       
 
@@ -185,7 +193,19 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">angular1.5 webpack es6</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">angular1.5</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">webpack</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">es6</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">class</a>
         		</li>
       		
 		</ul>
@@ -255,6 +275,25 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -366,7 +405,31 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">angular1.5 webpack es6</a>
+                <a href="javascript:void(0)" class="js-tag color1">angular1.5</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">webpack</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">es6</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">class</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">node</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">npm</a>
               </li>
             
             <div class="clearfix"></div>
@@ -418,11 +481,11 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://github.com/greensoon" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>github</a>
+              <a href="http://github.com/greensoon" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>吉猫</a>
             </li>
           
             <li class="search-li">
-              <a href="http://cnbolgs.com/nicoco" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>cnblogs</a>
+              <a href="http://cnbolgs.com/nicoco" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>西恩笔记</a>
             </li>
           
         </ul>
@@ -433,7 +496,7 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">愿世界和平&lt;br&gt;愿自己幸福</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">&lt;div &gt;&lt;img src=&quot;/imgs/me.png&quot; style=&quot;margin-top:-50%;&quot;&gt;&lt;div&gt;愿世界和平&lt;/div&gt;&lt;div&gt;愿我安康&lt;/div&gt;&lt;div&gt;愿我们平平淡淡&lt;/div&gt;&lt;div&gt;愿生活幸福&lt;/div&gt;&lt;div&gt;愿你我，淡如清风，美如明月&lt;/div&gt;&lt;/div&gt;</div>
   	  	
     	</section>
     
