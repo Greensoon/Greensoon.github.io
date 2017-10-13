@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="http://greensoon.github.io">
   <title>单词表-2 | Jim Pai&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="周monday周一tuesday                                周二wednesday                                           周三Thursday                                            周四Friday">
+  <meta name="description" content="周monday周一tuesday周二wednesday周三Thursday周四Friday周五Saturday周六Sunday周日   月份12january:[&amp;apos;dʒænjʊ(ə)rɪ]                              一月february: [&amp;apos;februəri]                               二月">
 <meta name="keywords" content="日期">
 <meta property="og:type" content="article">
 <meta property="og:title" content="单词表-2">
 <meta property="og:url" content="http://greensoon.github.io/2017/10/13/生词表-2/index.html">
 <meta property="og:site_name" content="Jim Pai&#39;s Blog">
-<meta property="og:description" content="周monday周一tuesday                                周二wednesday                                           周三Thursday                                            周四Friday">
-<meta property="og:updated_time" content="2017-10-13T06:26:20.000Z">
+<meta property="og:description" content="周monday周一tuesday周二wednesday周三Thursday周四Friday周五Saturday周六Sunday周日   月份12january:[&amp;apos;dʒænjʊ(ə)rɪ]                              一月february: [&amp;apos;februəri]                               二月">
+<meta property="og:updated_time" content="2017-10-13T07:31:50.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="单词表-2">
-<meta name="twitter:description" content="周monday周一tuesday                                周二wednesday                                           周三Thursday                                            周四Friday">
+<meta name="twitter:description" content="周monday周一tuesday周二wednesday周三Thursday周四Friday周五Saturday周六Sunday周日   月份12january:[&amp;apos;dʒænjʊ(ə)rɪ]                              一月february: [&amp;apos;februəri]                               二月">
   
     <link rel="alternative" href="/atom.xml" title="Jim Pai&#39;s Blog" type="application/atom+xml">
   
@@ -182,11 +182,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="周"><a href="#周" class="headerlink" title="周"></a>周</h4><div class="record-line clearfix"><span class="fl word">monday</span><span class="fr">周一</span></div><br><div><span>tuesday</span>                                <pan>周二</pan></div><br><div>wednesday                                           周三</div><br><div>Thursday                                            周四</div><br><div>Friday                                              周五</div><br><div>Saturday                                            周六</div><br><div>Sunday                                              周日</div>
+        <h4 id="周"><a href="#周" class="headerlink" title="周"></a>周</h4><div class="record-line clearfix"><span class="fl word">monday</span><span class="fr">周一</span></div><br><div class="record-line clearfix"><span class="fl word">tuesday</span><pan class="fr">周二</pan></div><br><div class="record-line clearfix"><span class="fl word">wednesday</span><span class="fr">周三</span></div><br><div class="record-line clearfix"><span class="fl word">Thursday</span><span class="fr">周四</span></div><br><div class="record-line clearfix"><span class="fl word">Friday</span><span class="fr">周五</span></div><br><div class="record-line clearfix"><span class="fl word">Saturday</span><span class="fr">周六</span></div><br><div class="record-line clearfix"><span class="fl word">Sunday</span><span class="fr">周日</span></div>
 
 
 <h4 id="月份"><a href="#月份" class="headerlink" title="月份"></a>月份</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">january:[&apos;dʒænjʊ(ə)rɪ]                              一月</div><div class="line">february: [&apos;februəri]                               二月</div></pre></td></tr></table></figure>
-
+<p><link rel="stylesheet" href="/css/layout.css"></p>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://watson-speech.mybluemix.net/bower_components/watson-speech/dist/watson-speech.js"></script>
+<script src="https://watson-speech.mybluemix.net/bower_components/fetch/fetch.js"></script>
+<script src="/js/jarvis.js"></script>
       
 
       
@@ -342,23 +346,6 @@
     </section>
   
 
-
-<link rel="stylesheet" href="/css/layout.css">
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://sdkcarlos.github.io/libs/artyom/artyom.js"></script>
-<script>
-    var Jarvis = new Artyom();
-
-    Jarvis.say("Hello World !");
-    $('.record-line').each(function(i, e) {
-        const $word = $(this).find('.word')
-        const word = $word.text()
-        $word.append('<a class="say-btn">发音</a>')
-        $(this).find('.say-btn').click(function() {
-            Jarvis.say(word);
-        })
-    })
-</script>
           </div>
         </div>
       </div>
@@ -464,10 +451,6 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">日期</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
@@ -481,6 +464,10 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">动物</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">日期</a>
               </li>
             
             <div class="clearfix"></div>

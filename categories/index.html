@@ -302,23 +302,6 @@
     </section>
   
 
-
-<link rel="stylesheet" href="/css/layout.css">
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://sdkcarlos.github.io/libs/artyom/artyom.js"></script>
-<script>
-    var Jarvis = new Artyom();
-
-    Jarvis.say("Hello World !");
-    $('.record-line').each(function(i, e) {
-        const $word = $(this).find('.word')
-        const word = $word.text()
-        $word.append('<a class="say-btn">发音</a>')
-        $(this).find('.say-btn').click(function() {
-            Jarvis.say(word);
-        })
-    })
-</script>
           </div>
         </div>
       </div>
@@ -424,10 +407,6 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">日期</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
@@ -441,6 +420,10 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">动物</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">日期</a>
               </li>
             
             <div class="clearfix"></div>

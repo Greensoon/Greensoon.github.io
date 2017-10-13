@@ -179,11 +179,15 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="周"><a href="#周" class="headerlink" title="周"></a>周</h4><div class="record-line clearfix"><span class="fl word">monday</span><span class="fr">周一</span></div><br><div><span>tuesday</span>                                <pan>周二</pan></div><br><div>wednesday                                           周三</div><br><div>Thursday                                            周四</div><br><div>Friday                                              周五</div><br><div>Saturday                                            周六</div><br><div>Sunday                                              周日</div>
+        <h4 id="周"><a href="#周" class="headerlink" title="周"></a>周</h4><div class="record-line clearfix"><span class="fl word">monday</span><span class="fr">周一</span></div><br><div class="record-line clearfix"><span class="fl word">tuesday</span><pan class="fr">周二</pan></div><br><div class="record-line clearfix"><span class="fl word">wednesday</span><span class="fr">周三</span></div><br><div class="record-line clearfix"><span class="fl word">Thursday</span><span class="fr">周四</span></div><br><div class="record-line clearfix"><span class="fl word">Friday</span><span class="fr">周五</span></div><br><div class="record-line clearfix"><span class="fl word">Saturday</span><span class="fr">周六</span></div><br><div class="record-line clearfix"><span class="fl word">Sunday</span><span class="fr">周日</span></div>
 
 
 <h4 id="月份"><a href="#月份" class="headerlink" title="月份"></a>月份</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">january:[&apos;dʒænjʊ(ə)rɪ]                              一月</div><div class="line">february: [&apos;februəri]                               二月</div></pre></td></tr></table></figure>
-
+<p><link rel="stylesheet" href="/css/layout.css"></p>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://watson-speech.mybluemix.net/bower_components/watson-speech/dist/watson-speech.js"></script>
+<script src="https://watson-speech.mybluemix.net/bower_components/fetch/fetch.js"></script>
+<script src="/js/jarvis.js"></script>
       
 
       
@@ -230,23 +234,6 @@
 
 
 
-
-<link rel="stylesheet" href="/css/layout.css">
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://sdkcarlos.github.io/libs/artyom/artyom.js"></script>
-<script>
-    var Jarvis = new Artyom();
-
-    Jarvis.say("Hello World !");
-    $('.record-line').each(function(i, e) {
-        const $word = $(this).find('.word')
-        const word = $word.text()
-        $word.append('<a class="say-btn">发音</a>')
-        $(this).find('.say-btn').click(function() {
-            Jarvis.say(word);
-        })
-    })
-</script>
   
     <article id="post-生词表-1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -316,23 +303,6 @@
 
 
 
-
-<link rel="stylesheet" href="/css/layout.css">
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://sdkcarlos.github.io/libs/artyom/artyom.js"></script>
-<script>
-    var Jarvis = new Artyom();
-
-    Jarvis.say("Hello World !");
-    $('.record-line').each(function(i, e) {
-        const $word = $(this).find('.word')
-        const word = $word.text()
-        $word.append('<a class="say-btn">发音</a>')
-        $(this).find('.say-btn').click(function() {
-            Jarvis.say(word);
-        })
-    })
-</script>
   
     <article id="post-第三章 不是瞎子的张瞎子" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -428,23 +398,6 @@
 
 
 
-
-<link rel="stylesheet" href="/css/layout.css">
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://sdkcarlos.github.io/libs/artyom/artyom.js"></script>
-<script>
-    var Jarvis = new Artyom();
-
-    Jarvis.say("Hello World !");
-    $('.record-line').each(function(i, e) {
-        const $word = $(this).find('.word')
-        const word = $word.text()
-        $word.append('<a class="say-btn">发音</a>')
-        $(this).find('.say-btn').click(function() {
-            Jarvis.say(word);
-        })
-    })
-</script>
   
     <article id="post-第五章 名人" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -524,23 +477,6 @@
 
 
 
-
-<link rel="stylesheet" href="/css/layout.css">
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://sdkcarlos.github.io/libs/artyom/artyom.js"></script>
-<script>
-    var Jarvis = new Artyom();
-
-    Jarvis.say("Hello World !");
-    $('.record-line').each(function(i, e) {
-        const $word = $(this).find('.word')
-        const word = $word.text()
-        $word.append('<a class="say-btn">发音</a>')
-        $(this).find('.say-btn').click(function() {
-            Jarvis.say(word);
-        })
-    })
-</script>
   
     <article id="post-第四章 福祸相依" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -653,23 +589,6 @@
 
 
 
-
-<link rel="stylesheet" href="/css/layout.css">
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://sdkcarlos.github.io/libs/artyom/artyom.js"></script>
-<script>
-    var Jarvis = new Artyom();
-
-    Jarvis.say("Hello World !");
-    $('.record-line').each(function(i, e) {
-        const $word = $(this).find('.word')
-        const word = $word.text()
-        $word.append('<a class="say-btn">发音</a>')
-        $(this).find('.say-btn').click(function() {
-            Jarvis.say(word);
-        })
-    })
-</script>
   
     <article id="post-第二章 神奇的张大炮" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -769,23 +688,6 @@
 
 
 
-
-<link rel="stylesheet" href="/css/layout.css">
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://sdkcarlos.github.io/libs/artyom/artyom.js"></script>
-<script>
-    var Jarvis = new Artyom();
-
-    Jarvis.say("Hello World !");
-    $('.record-line').each(function(i, e) {
-        const $word = $(this).find('.word')
-        const word = $word.text()
-        $word.append('<a class="say-btn">发音</a>')
-        $(this).find('.say-btn').click(function() {
-            Jarvis.say(word);
-        })
-    })
-</script>
   
     <article id="post-第一章 生孩子的男人" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -884,23 +786,6 @@
 
 
 
-
-<link rel="stylesheet" href="/css/layout.css">
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://sdkcarlos.github.io/libs/artyom/artyom.js"></script>
-<script>
-    var Jarvis = new Artyom();
-
-    Jarvis.say("Hello World !");
-    $('.record-line').each(function(i, e) {
-        const $word = $(this).find('.word')
-        const word = $word.text()
-        $word.append('<a class="say-btn">发音</a>')
-        $(this).find('.say-btn').click(function() {
-            Jarvis.say(word);
-        })
-    })
-</script>
   
     <article id="post-前言" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -980,23 +865,6 @@
 
 
 
-
-<link rel="stylesheet" href="/css/layout.css">
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://sdkcarlos.github.io/libs/artyom/artyom.js"></script>
-<script>
-    var Jarvis = new Artyom();
-
-    Jarvis.say("Hello World !");
-    $('.record-line').each(function(i, e) {
-        const $word = $(this).find('.word')
-        const word = $word.text()
-        $word.append('<a class="say-btn">发音</a>')
-        $(this).find('.say-btn').click(function() {
-            Jarvis.say(word);
-        })
-    })
-</script>
   
     <article id="post-angular1-5-webpack的项目说明" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -1079,23 +947,6 @@
 
 
 
-
-<link rel="stylesheet" href="/css/layout.css">
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://sdkcarlos.github.io/libs/artyom/artyom.js"></script>
-<script>
-    var Jarvis = new Artyom();
-
-    Jarvis.say("Hello World !");
-    $('.record-line').each(function(i, e) {
-        const $word = $(this).find('.word')
-        const word = $word.text()
-        $word.append('<a class="say-btn">发音</a>')
-        $(this).find('.say-btn').click(function() {
-            Jarvis.say(word);
-        })
-    })
-</script>
   
     <article id="post-hexo的简单使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -1178,23 +1029,6 @@
 
 
 
-
-<link rel="stylesheet" href="/css/layout.css">
-<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
-<script src="https://sdkcarlos.github.io/libs/artyom/artyom.js"></script>
-<script>
-    var Jarvis = new Artyom();
-
-    Jarvis.say("Hello World !");
-    $('.record-line').each(function(i, e) {
-        const $word = $(this).find('.word')
-        const word = $word.text()
-        $word.append('<a class="say-btn">发音</a>')
-        $(this).find('.say-btn').click(function() {
-            Jarvis.say(word);
-        })
-    })
-</script>
   
   
 
@@ -1306,10 +1140,6 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">日期</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
@@ -1323,6 +1153,10 @@ return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){v
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">动物</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">日期</a>
               </li>
             
             <div class="clearfix"></div>
