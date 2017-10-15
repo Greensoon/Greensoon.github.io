@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://greensoon.github.io">
-  <title>Tag: webpack | Jim Pai&#39;s Blog</title>
+  <title>Jim Pai&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Jim Pai&#39;s Blog">
-<meta property="og:url" content="http://greensoon.github.io/tags/webpack/index.html">
+<meta property="og:url" content="http://greensoon.github.io/page/2/index.html">
 <meta property="og:site_name" content="Jim Pai&#39;s Blog">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Jim Pai&#39;s Blog">
@@ -159,70 +159,93 @@
           <div id="js-content" class="content-ll">
             
   
-  
+    <article id="post-hexo的简单使用" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/10/08/angular1-5-webpack的项目说明/" class="archive-article-date">
-  	<time datetime="2017-10-08T08:22:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-08</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
     <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/08/angular1-5-webpack的项目说明/">angular1.5+webpack的项目说明</a>
+      <a class="article-title" href="/2017/06/28/hexo的简单使用/">hexo使用部署说明</a>
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/06/28/hexo的简单使用/" class="archive-article-date">
+  	<time datetime="2017-06-28T14:16:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-06-28</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一起来学习使用 <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>!<br>第一篇日志是介绍如何使用Hexo. 想要更多信息，就去查看官方文档啊亲 <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> . 如果你在用Hexo时遇到了任何问题，建议你不要做一个伸手党，去 <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a>这个地址看一下，或者你也可以到 <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>这里去问作者.</p>
+<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo</div></pre></td></tr></table></figure>
+<h3 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo init blog</div></pre></td></tr></table></figure>
+<h3 id="进入目录"><a href="#进入目录" class="headerlink" title="进入目录"></a>进入目录</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> blog</div></pre></td></tr></table></figure>
+<h3 id="新建一个日志"><a href="#新建一个日志" class="headerlink" title="新建一个日志"></a>新建一个日志</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"我的新日志"</span></div></pre></td></tr></table></figure>
+<p>更多信息可以查看: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">新建日志</a></p>
+<h3 id="本地服务"><a href="#本地服务" class="headerlink" title="本地服务"></a>本地服务</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>更多信息可以查看: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">服务</a></p>
+<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>更多信息可以查看: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">生成</a></p>
+<h3 id="发布到远程站点"><a href="#发布到远程站点" class="headerlink" title="发布到远程站点"></a>发布到远程站点</h3><p>发布到远程站点之前，应当配置一些东西</p>
+<blockquote>
+<p>第一步：</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>更多信息可以查看: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<p>~~~ 么么哒，这就是hexo的简单使用</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">angular1.5</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">webpack</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">node</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">es6</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">class</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">npm</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/06/28/hexo的简单使用/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
-  
-  
-    </div></section>
-  
 
-    
+
+
+
+  
+  
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+    </nav>
+  
 
 
 
@@ -246,10 +269,10 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
+		isHome: true,
 		isPost: false,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: false,
 		root: "/",
